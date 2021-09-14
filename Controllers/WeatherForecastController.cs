@@ -25,9 +25,10 @@ namespace WebApplication1.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<User> Get(int id)
+        public IEnumerable<int> Get(int id)
         {
-            return _dataContext.User.ToList();
+            return new int[] { 14, 23, 37 };
+            //return _dataContext.User.ToList();
         }
     }
 }
