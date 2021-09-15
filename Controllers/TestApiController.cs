@@ -13,12 +13,12 @@ namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class TestApiController : ControllerBase
     {
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<TestApiController> _logger;
         private readonly DataContext _dataContext;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, DataContext dataContext)
+        public TestApiController(ILogger<TestApiController> logger, DataContext dataContext)
         {
             _logger = logger;
             _dataContext = dataContext;
